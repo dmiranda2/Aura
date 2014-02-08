@@ -28,11 +28,11 @@
 	<distance name="bottom_height" value="4" />
 	<distance name="left_titlebar_edge" value="18"/>
 	<distance name="right_titlebar_edge" value="18"/>
-	<distance name="title_vertical_pad" value="4"/> <!-- since the title is hidden, this sets the height of the title bars-->
+	<distance name="title_vertical_pad" value="18"/> <!-- since the title is hidden, this sets the height of the title bars-->
 	<border name="title_border" left="0" right="0" top="0" bottom="0"/>
 	<border name="button_border" left="0" right="0" top="0" bottom="0"/>
 	<distance name="button_width" value="14"/>
-	<distance name="button_height" value="4"/>
+	<distance name="button_height" value="9"/>
 </frame_geometry>
 
 <frame_geometry name="normal_unfocused" has_title="false" rounded_top_left="1" rounded_top_right="1" parent="normal">
@@ -45,7 +45,7 @@
 	<distance name="right_width" value="0" />
 	<distance name="left_titlebar_edge" value="0"/>
 	<distance name="right_titlebar_edge" value="0"/>
-	<distance name="title_vertical_pad" value="0"/> <!-- 
+	<distance name="title_vertical_pad" value="8"/> <!-- 
 							This needs to be 1 less than the
 							title_vertical_pad on normal state
 							or you'll have bigger buttons -->
@@ -75,7 +75,7 @@
 	<distance name="right_titlebar_edge" value="1"/>
 </frame_geometry>
 
-<frame_geometry name="nobuttons" hide_buttons="true" parent="normal">
+<frame_geometry name="nobuttons" hide_buttons="false" parent="normal">
 </frame_geometry>
 
 <frame_geometry name="border" has_title="false" rounded_top_left="false" rounded_top_right="false" parent="normal" >
@@ -194,9 +194,9 @@
 <draw_ops name="close_glyph_focused">
 	<image filename="close_focused_normal.svg" 
 		x="(width - object_width) / 2" 
-		y="(height - object_height) / 2" 
+		y="(height -2*object_height) / 2" 
 		width="object_width" 
-		height="object_height"/>
+		height="2*object_height"/>
 </draw_ops>
 
 <draw_ops name="close_focused">
@@ -206,25 +206,25 @@
 <draw_ops name="close_focused_prelight">
 	<image filename="close_focused_prelight.svg" 
 		x="(width - object_width) / 2" 
-		y="(height - object_height) / 2" 
+		y="(height - 2*object_height) / 2" 
 		width="object_width" 
-		height="object_height"/>
+		height="2*object_height"/>
 </draw_ops>
 
 <draw_ops name="close_focused_pressed">
 	<image filename="close_focused_pressed.svg" 
 		x="(width - object_width) / 2" 
-		y="(height - object_height) / 2 " 
+		y="(height - 2*object_height) / 2 " 
 		width="object_width" 
-		height="object_height"/>
+		height="2*object_height"/>
 </draw_ops>
 
 <draw_ops name="close_glyph_unfocused">
 	<image filename="close_unfocused.svg" 
 		x="(width - object_width) / 2" 
-		y="(height - object_height) / 2" 
+		y="(height - 2*object_height) / 2" 
 		width="object_width" 
-		height="object_height"/>
+		height="2*object_height"/>
 </draw_ops>
 
 <draw_ops name="close_unfocused">
@@ -234,9 +234,9 @@
 <draw_ops name="close_glyph_unfocused_prelight">
 	<image filename="close_unfocused_prelight.svg" 
 		x="(width - object_width) / 2" 
-		y="(height - object_height) / 2" 
+		y="(height - 2*object_height) / 2" 
 		width="object_width" 
-		height="object_height"/>
+		height="2*object_height"/>
 </draw_ops>
 
 <draw_ops name="close_unfocused_prelight">
@@ -246,9 +246,9 @@
 <draw_ops name="close_glyph_unfocused_pressed">
 	<image filename="close_unfocused.svg" 
 		x="(width - object_width) / 2" 
-		y="(height - object_height) / 2" 
+		y="(height - 2*object_height) / 2" 
 		width="object_width" 
-		height="object_height"/>
+		height="2*object_height"/>
 </draw_ops>
 
 <draw_ops name="close_unfocused_pressed">
@@ -258,9 +258,9 @@
 <draw_ops name="maximize_glyph_focused">
 	<image filename="maximize_focused_normal.svg"
 		x="(width - object_width) / 2" 
-		y="(height - object_height) / 2" 
+		y="(height - 2*object_height) / 2" 
 		width="object_width" 
-		height="object_height"/>
+		height="2*object_height"/>
 </draw_ops>
 
 <draw_ops name="maximize_focused">
@@ -270,25 +270,25 @@
 <draw_ops name="maximize_focused_prelight">
 	<image filename="maximize_focused_prelight.svg"
 		x="(width - object_width) / 2" 
-		y="(height - object_height) / 2" 
+		y="(height - 2*object_height) / 2" 
 		width="object_width" 
-		height="object_height"/>
+		height="2*object_height"/>
 </draw_ops>
 
 <draw_ops name="maximize_focused_pressed">
 	<image filename="maximize_focused_pressed.svg"
 		x="(width - object_width) / 2" 
-		y="(height - object_height) / 2" 
+		y="(height - 2*object_height) / 2" 
 		width="object_width" 
-		height="object_height"/>
+		height="2*object_height"/>
 </draw_ops>
 
 <draw_ops name="maximize_glyph_unfocused">
 	<image filename="maximize_unfocused.svg"
 		x="(width - object_width) / 2" 
-		y="(height - object_height) / 2" 
+		y="(height - 2*object_height) / 2" 
 		width="object_width" 
-		height="object_height"/>
+		height="2*object_height"/>
 </draw_ops>
 
 <draw_ops name="maximize_unfocused">
@@ -298,9 +298,9 @@
 <draw_ops name="maximize_glyph_unfocused_prelight">
 	<image filename="maximize_unfocused_prelight.svg"
 		x="(width - object_width) / 2" 
-		y="(height - object_height) / 2" 
+		y="(height - 2*object_height) / 2" 
 		width="object_width" 
-		height="object_height"/>
+		height="2*object_height"/>
 </draw_ops>
 
 <draw_ops name="maximize_unfocused_prelight">
@@ -310,9 +310,9 @@
 <draw_ops name="maximize_glyph_unfocused_pressed">
 	<image filename="maximize_unfocused.svg"
 		x="(width - object_width) / 2" 
-		y="(height - object_height) / 2" 
+		y="(height - 2*object_height) / 2" 
 		width="object_width" 
-		height="object_height"/>
+		height="2*object_height"/>
 </draw_ops>
 
 <draw_ops name="maximize_unfocused_pressed">
@@ -322,9 +322,9 @@
 <draw_ops name="minimize_glyph_focused">
 	<image filename="minimize_focused_normal.svg"
 		x="(width - object_width) / 2" 
-		y="(height - object_height) / 2" 
+		y="(height - 2*object_height) / 2" 
 		width="object_width" 
-		height="object_height"/>
+		height="2*object_height"/>
 </draw_ops>
 
 <draw_ops name="minimize_focused">
@@ -334,25 +334,25 @@
 <draw_ops name="minimize_focused_prelight">
 	<image filename="minimize_focused_prelight.svg"
 		x="(width - object_width) / 2" 
-		y="(height - object_height) / 2" 
+		y="(height - 2*object_height) / 2" 
 		width="object_width" 
-		height="object_height"/>
+		height="2*object_height"/>
 </draw_ops>
 
 <draw_ops name="minimize_focused_pressed">
 	<image filename="minimize_focused_pressed.svg"
 		x="(width - object_width) / 2" 
-		y="(height - object_height) / 2" 
+		y="(height - 2*object_height) / 2" 
 		width="object_width" 
-		height="object_height"/>
+		height="2*object_height"/>
 </draw_ops>
 
 <draw_ops name="minimize_glyph_unfocused">
 	<image filename="minimize_unfocused.svg"
 		x="(width - object_width) / 2" 
-		y="(height - object_height) / 2" 
+		y="(height - 2*object_height) / 2" 
 		width="object_width" 
-		height="object_height"/>
+		height="2*object_height"/>
 </draw_ops>
 
 <draw_ops name="minimize_unfocused">
@@ -362,9 +362,9 @@
 <draw_ops name="minimize_glyph_unfocused_prelight">
 	<image filename="minimize_unfocused_prelight.svg"
 		x="(width - object_width) / 2" 
-		y="(height - object_height) / 2" 
+		y="(height - 2*object_height) / 2" 
 		width="object_width" 
-		height="object_height"/>
+		height="2*object_height"/>
 </draw_ops>
 
 <draw_ops name="minimize_unfocused_prelight">
@@ -374,9 +374,9 @@
 <draw_ops name="minimize_glyph_unfocused_pressed">
 	<image filename="minimize_unfocused.svg"
 		x="(width - object_width) / 2" 
-		y="(height - object_height) / 2" 
+		y="(height - 2*object_height) / 2" 
 		width="object_width" 
-		height="object_height"/>
+		height="2*object_height"/>
 </draw_ops>
 
 <draw_ops name="minimize_unfocused_pressed">
