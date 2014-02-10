@@ -1,4 +1,4 @@
-# Phosphene
+# Aura
 A GNOME 3.10 theme for GNOME Shell, GTK 3, Mutter, and Firefox. [See the preview](http://hdni.github.io/rice/assets/phosphene_preview.png).
 
 ## Installation
