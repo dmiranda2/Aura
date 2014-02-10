@@ -21,7 +21,7 @@
 
 /* default text style */
 stage {
-	font-family: "FreeSans", sans-serif;
+	font-family: "Open Sans", bold, sans-serif;
 	font-size: 9pt;
 	color: white;
 }
