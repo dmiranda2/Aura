@@ -1,5 +1,5 @@
 /* Default color scheme */
-@define-color theme_base_color #FAFAFA;
+@define-color theme_base_color #FFF;
 @define-color theme_alt_color #E8EAF0;
 @define-color theme_text_color #3c4c5c;
 @define-color theme_selected_bg_color #4b9ddb;
@@ -252,9 +252,9 @@
  ******/
 @define-color wm_title @theme_text_color;
 @define-color wm_unfocused_title @theme_unfocused_fg_color;
-@define-color wm_highlight #FAFAFAfff;
-@define-color wm_title_highlight_dark alpha(#FAFAFAfff, 0.0);
-@define-color wm_title_highlight #FAFAFAfff;
+@define-color wm_highlight #ffffff;
+@define-color wm_title_highlight_dark alpha(#ffffff, 0.0);
+@define-color wm_title_highlight #ffffff;
 @define-color wm_title_shadow @wm_title_highlight;
 
 @define-color wm_bg_a shade (@theme_alt_color, 1.1);
