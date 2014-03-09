@@ -4,8 +4,6 @@
 
 gtk-color-scheme	= "base_color:#FAFAFA\nfg_color:#000000\ntooltip_fg_color:#FAFAFA\nselected_bg_color:#4A90D9\nselected_fg_color:#FAFAFA\ntext_color:#313739\nbg_color:#FAFAFA\ninsensitive_bg_color:#FAFAFA\ntooltip_bg_color:#343434"
 
-
-
 gtk-auto-mnemonics              = 1
 gtk-primary-button-warps-slider = 1
 
