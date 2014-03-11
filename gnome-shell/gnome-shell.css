@@ -21,8 +21,8 @@
 
 /* default text style */
 stage {
-	font-family: "Open Sans", bold, sans-serif;
-	font-size: 11pt;
+	font-family: "Roboto", sans-serif;
+	font-size: 12pt;
 	color: white;
 }
 
@@ -680,7 +680,7 @@ StScrollBar StButton#vhandle:active {
 }
 
 #panelActivities {
-	width: 90px;
+	width: 0px;
 	height: 0px;
 }
 

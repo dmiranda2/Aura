@@ -1,6 +1,6 @@
 /* Default color scheme */
-@define-color theme_base_color #FAFAFA;
-@define-color theme_alt_color #E8EAF0;
+@define-color theme_base_color #fff;
+@define-color theme_alt_color #e8eaed;
 @define-color theme_text_color #3c4c5c;
 @define-color theme_selected_bg_color #4b9ddb;
 @define-color theme_selected_fg_color @theme_base_color;
@@ -28,7 +28,7 @@
 @define-color menu_combobox_border @theme_selected_bg_color;
 @define-color menu_separator shade (@menu_bg_color, 0.96);
 
-@define-color menubar_background #FAFAFA; /* Same color as window decorations */
+@define-color menubar_background #fff; /* Same color as window decorations */
 @define-color menubar_fg_color @theme_text_color;
 @define-color menubar_hover_background #4b9ddb;
 @define-color menubar_hover_fg_color @theme_base_color;
@@ -168,7 +168,7 @@
 /*******
  * OSD *
  *******/
-@define-color osd_highlight #FAFAFA;
+@define-color osd_highlight #ffffff;
 @define-color osd_lowlight #d2d3d4;
 @define-color osd_base #252629;
 @define-color osd_base_backdrop shade(@osd_base, 1.40);
@@ -252,9 +252,9 @@
  ******/
 @define-color wm_title @theme_text_color;
 @define-color wm_unfocused_title @theme_unfocused_fg_color;
-@define-color wm_highlight #FAFAFAfff;
-@define-color wm_title_highlight_dark alpha(#FAFAFAfff, 0.0);
-@define-color wm_title_highlight #FAFAFAfff;
+@define-color wm_highlight #ffffff;
+@define-color wm_title_highlight_dark alpha(#ffffff, 0.0);
+@define-color wm_title_highlight #ffffff;
 @define-color wm_title_shadow @wm_title_highlight;
 
 @define-color wm_bg_a shade (@theme_alt_color, 1.1);

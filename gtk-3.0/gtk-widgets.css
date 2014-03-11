@@ -15,7 +15,7 @@
 	-GtkPaned-handle-size: 5;
 
 	-GtkCheckButton-indicator-size: 16;
-	-GtkCheckMenuItem-indicator-size: 10;
+	-GtkCheckMenuItem-indicator-size: 12;
 
 	/* The size for scrollbars. The slider is 2px smaller, but we keep it
 	 * up so that the whole area is sensitive to button presses for the
@@ -1531,7 +1531,7 @@ GtkComboBox.combobox-entry .button *:insensitive {
 	-GtkRange-trough-border: 0;
 	-GtkScrollbar-has-backward-stepper: false;
 	-GtkScrollbar-has-forward-stepper: false;
-	-GtkRange-slider-width: 6;
+	-GtkRange-slider-width: 4;
 	-GtkScrollbar-min-slider-length: 42; /* minimum size for the slider. sadly can't be in '.slider' where it belongs */
 
 	-GtkRange-stepper-spacing: 0;
